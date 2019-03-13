@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gameTypeEntries">
+        <item>Venison</item>
+        <item>Boar</item>
+        <item>Pheasant</item>
+        <item>Turkey</item>
+        <item>Moose</item>
+        <item>Caribou</item>
+        <item>Bear</item>
+        <item>Duck</item>
+        <item>Grouse</item>
+        <item>Partridge</item>
+        <item>Quail</item>
+        <item>Pronghorn</item>
+        <item>Bison</item>
+        <item>Sheep</item>
+    </string-array>
+    <string-array name="gameTypeValues">
+        <item>VENISON</item>
+        <item>BOAR</item>
+        <item>PHEASANT</item>
+        <item>TURKEY</item>
+        <item>MOOSE</item>
+        <item>CARIBOU</item>
+        <item>BEAR</item>
+        <item>DUCK</item>
+        <item>GROUSE</item>
+        <item>PARTRIDGE</item>
+        <item>QUAIL</item>
+        <item>PRONGHORN</item>
+        <item>BISON</item>
+        <item>SHEEP</item>
+    </string-array>
+
+
+
+</resources>

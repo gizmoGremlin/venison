@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@id/recipeListFragment">
+
+    <fragment
+            android:id="@+id/detailFragment"
+            android:name="com.pompouslypickled.venison.ui.recipe.detail.RecipeDetailFragment"
+            android:label="Details"
+            tools:layout="@layout/recipe_detail_fragment" >
+        <action android:id="@+id/action_detailFragment_to_recipeListFragment" app:destination="@id/recipeListFragment"/>
+        <argument android:name="name" app:argType="string" android:defaultValue='""'/>
+    </fragment>
+    <fragment
+            android:id="@+id/recipeListFragment"
+            android:name="com.pompouslypickled.venison.ui.recipe.recipe_list.RecipeListFragment"
+            android:label="Tasty and Fast"
+            tools:layout="@layout/recipe_list_fragment" >
+
+        <action android:id="@+id/action_recipeListFragment_to_detailFragment" app:destination="@id/detailFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/settingsFragment"
+            android:name="com.pompouslypickled.venison.ui.settings.SettingsFragment"
+            android:label="Settings" />
+    <fragment android:id="@+id/recipeBookFragment"
+              android:name="com.pompouslypickled.venison.ui.recipe.recipe_book.RecipeBookFragment"
+              android:label="Favorites" tools:layout="@layout/recipe_book_fragment"/>
+</navigation>

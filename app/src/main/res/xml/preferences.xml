@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Game Type">
+        <ListPreference
+            android:key="USE_GAME_TYPE"
+            android:title="Game Type"
+            android:summary="%s"
+            android:defaultValue="Venison"
+            android:entries="@array/gameTypeEntries"
+            android:entryValues="@array/gameTypeValues"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
