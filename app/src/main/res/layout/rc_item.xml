@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:contentPadding="10dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="4dp"
+            card_view:cardMaxElevation="4dp"
+    >
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView
+                    android:paddingBottom="8dp"
+                    android:id="@+id/recipe_pic"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+            <TextView
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000000"
+                    android:id="@+id/recipe_tit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recipe_pic"
+                    android:textSize="18sp"
+            />
+            <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recipe_tit"
+            />
+            <TextView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cals"
+            />
+            <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/url"
+            />
+            <TextView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/ingredient_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+            />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
