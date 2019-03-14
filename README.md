@@ -5,7 +5,7 @@ Fetches and Displays recipes from Edamame APi.
 
 Architecture: MVVM
 Language Used: Kotlin
-External Libraries Used: Room, RxJava, Android Navigation, Gson, CoRoutines, Retrofit2, Glide, Groupie,Anko
+External Libraries Used: Room, RxJava, Android Navigation, Gson, CoRoutines, Retrofit2, Glide, Groupie, Anko
 
 
 
